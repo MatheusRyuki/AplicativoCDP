@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 16 20:53:37 GFT 2018
+#Wed May 16 21:07:29 GFT 2018
 25.file=C\:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-ldpi-v4\\screen.png
 25.base=C\:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 22.set=ASSET
