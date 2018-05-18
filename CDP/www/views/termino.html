@@ -56,13 +56,23 @@
                 var  doc = new jsPDF();
                
 
-doc.text(text, 10, 10);
+                    doc.text(text, 10, 10);
 
                 
                
+              var pdf = doc.save();
                 
-            doc.output('Relatório do Checklist.pdf');  
-                alert("Documento Pronto!");
+                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
+                    fileSystem.root.getFile('Relatório do Checklist.pdf', {create: true}, function(entry){
+                        var fileEntry = entry;
+                        
+                        entry.createWriter(function(writer){
+                            writer.write (pdf);
+                        });
+                    });
+                });
+           
+              
 });
             
 
