@@ -1,7 +1,7 @@
 <html>
 
     <head>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -12,7 +12,10 @@
         
         
         <div class="ui container">
-        
+                  <div class="ui floating message" style="margin-top: 20px;">
+       Tudo está correto! Agora clique abaixo para gerar o pdf:
+    </div>   
+            
              <button  id="imprimir"  class="fluid ui negative basic button" style="margin-top: 20px">Gerar PDF</button>
     
             
@@ -20,16 +23,46 @@
         
         
           <script type="text/javascript" src="./scripts/jQuery.js"></script>
+        <script type="text/javascript" src="./scripts/fileSaver.js"></script>
         <script type="text/javascript" src="../../jsPDF-1.3.2/jspdf.js"></script>
             <script type="text/javascript" src="./scripts/semantic-ui.js"></script>
         <script>
-        var doc = new jsPDF();
+
             
             $( "#imprimir" ).click(function() {
-  
-            doc.text('Hello world!', 10, 10);
-            doc.save('a4.pdf');  
-                alert("Documento Impresso!");
+
+	       text = 'Fiscal: ' +  localStorage.fiscal  +
+		'\nArea: ' + localStorage.area + '\n\nOs quesitos abaixos estao conformes? :'
+                + '\n\nLimpeza: ' +  localStorage.resposta1  +
+		'\nHidrantes: ' + localStorage.resposta2
+                + '\nAgua Acumulada: ' +  localStorage.resposta3  +
+		'\nPavimentacao: ' + localStorage.resposta4
+                + '\nTransito: ' +  localStorage.resposta5  +
+		'\nSinalizacao: ' + localStorage.resposta6
+                + '\nGeracao de Particulados: ' +  localStorage.resposta7  +
+		'\nEPI: ' + localStorage.resposta8 
+                  + '\nEstacionamento: ' +  localStorage.resposta9  +
+		'\nAcumulo/Fuga de Residuos: ' + localStorage.resposta10
+                  + '\nEstrutura: ' +  localStorage.resposta11  +
+		'\nIluminacao: ' + localStorage.resposta12
+                  + '\nCarga Perigosa: ' +  localStorage.resposta13  +
+		'\nDescarte de Residuo: ' + localStorage.resposta14
+                  + '\nGeracao de efluentes liquidos: ' +  localStorage.resposta15  +
+		'\nArmazenamento de Carga: ' + localStorage.resposta16
+                  + '\nCondicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
+		'\nProcedimento Operacional: ' + localStorage.resposta18 
+               + '\nOperador Portuario: ' +  localStorage.resposta19;
+            
+                var  doc = new jsPDF();
+               
+
+doc.text(text, 10, 10);
+
+                
+               
+                
+            doc.save('Relatório do Checklist.pdf');  
+                alert("Documento Pronto!");
 });
             
 
