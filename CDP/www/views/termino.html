@@ -60,17 +60,32 @@
 
                 
                
-              var pdf = doc.save();
+              var pdf = doc.output();
                 
-                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
-                    fileSystem.root.getFile('Relatório do Checklist.pdf', {create: true}, function(entry){
-                        var fileEntry = entry;
-                        
-                        entry.createWriter(function(writer){
-                            writer.write (pdf);
-                        });
-                    });
-                });
+               window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
+
+     console.log(fileSystem.name);
+     console.log(fileSystem.root.name);
+     console.log(fileSystem.root.fullPath);
+
+     fileSystem.root.getFile("Relatório do Checklist.pdf", {create: true}, function(entry) {
+        var fileEntry = entry;
+        console.log(entry);
+
+  entry.createWriter(function(writer) {
+     writer.onwrite = function(evt) {
+     console.log("write success");
+  };
+
+        console.log("writing to file");
+           writer.write( pdf );
+        }, function(error) {
+           console.log(error);
+        });
+
+     }, function(error){
+        console.log(error);
+     });
            
               
 });
