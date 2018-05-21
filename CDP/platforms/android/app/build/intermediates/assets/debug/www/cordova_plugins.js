@@ -207,6 +207,15 @@ module.exports = [
       "pugin.pdf",
       "pdf"
     ]
+  },
+  {
+    "id": "cordova-plugin-printer.Printer",
+    "file": "plugins/cordova-plugin-printer/www/printer.js",
+    "pluginId": "cordova-plugin-printer",
+    "clobbers": [
+      "plugin.printer",
+      "cordova.plugins.printer"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -216,7 +225,8 @@ module.exports.metadata =
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-dialogs": "2.0.1",
-  "cordova-pdf-generator": "2.0.4"
+  "cordova-pdf-generator": "2.0.4",
+  "cordova-plugin-printer": "0.7.3"
 };
 // BOTTOM OF METADATA
 });

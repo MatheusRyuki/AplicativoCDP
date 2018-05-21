@@ -1,0 +1,531 @@
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="./styles/semantic-ui.css">
+        <title>Questionário</title>
+    </head>
+    <body>
+        
+        
+        <div class="ui container">
+            
+
+                
+            <div class="ui form" style="margin-top: 20px">
+  <div class="two fields">
+    <div class="field">
+      <label>Fiscal:</label>
+      <input type="text" placeholder="Fiscal" id="Fiscal" name="Fiscal">
+    </div>
+    <div class="field">
+      <label>Área:</label>
+      <input type="text" placeholder="Área" id="Area" name="Área">
+    </div>
+                </div>
+            </div>
+            
+        
+        <div class="ui floating message" style="margin-top: 20px;">
+        Responda aos seguintes itens, se estão em conformidade:
+    </div>   
+            
+         
+<div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Limpeza</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" class="resposta1" name="resposta1"  tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" class="resposta1" name="resposta1" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+           
+            <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Hidrantes</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta2" class="resposta2" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta2" class="resposta2" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+               <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Água Acumulada</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta3"  class="resposta3" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta3" class="resposta3" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                    <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Pavimentação</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta4" class="resposta4" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta4" class="resposta4" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+            <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Trânsito</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta5" class="resposta5"  tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta5" class="resposta5" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                     <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Sinalização</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta6" class="resposta6" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta6"  class="resposta6"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+            
+                     <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Geração de Particulados</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta7" class="resposta7"   tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta7" class="resposta7" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                     <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">EPI</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta8" class="resposta8" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta8" class="resposta8" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                     <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Estacionamento</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta9" class="resposta9" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta9"  class="resposta9" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+                          <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Acúmulo/Fuga de Resíduos</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta10"  class="resposta10" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta10" class="resposta10"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+            <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Estrutura</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta11" class="resposta11"  tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta11" class="resposta11"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Iluminação</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta12" class="resposta12"   tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta12" class="resposta12"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Carga Perigosa</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta13" class="resposta13"   tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta13" class="resposta13" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Descarte de Resíduo</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta14"  class="resposta14" tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta14"  class="resposta14" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+            
+                  <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Geração de efluentes líquidos</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta15"  class="resposta15"   tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta15"   class="resposta15"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div>
+           
+                  <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Armazenamento de Carga</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta16" class="resposta16"  tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta16" class="resposta16" tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div> 
+                   <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Condições de Máquinas e Equipamentos</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta17" class="resposta17"  tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta17" class="resposta17"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div> 
+            
+                   <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Procedimento Operacional</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta18" class="resposta18"   tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta18" class="resposta18"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div> 
+               <div class="ui form">
+       <table class="ui red table">
+  <thead>
+    <tr><th>
+        <label for="resposta1" class="ui header">Operador Portuário</label></th></tr></thead>
+           <tbody><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta19" class="resposta19"   tabindex="0" class="hidden" value="Sim">
+        <label>Sim</label>
+      </div>
+    </div>
+               </td></tr><tr><td>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="resposta19" class="resposta19"  tabindex="0" class="hidden" value="Nao">
+        <label>Não</label>
+      </div>
+    </div>
+               </td>
+               </tr>
+               </tbody>
+    </table>
+</div> 
+
+            
+           <button type="submit" id="imprimir"  class="fluid ui positive basic button" style="margin-top: 20px">Finalizar</button>
+ 
+    
+           
+        </div>
+        
+         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="scripts/jQuery.js"></script>
+        <script type="text/javascript" src="scripts/semantic-ui.js"></script>
+         <script type="text/javascript" src="scripts/questionario.js"></script>
+    </body>
+</html>
