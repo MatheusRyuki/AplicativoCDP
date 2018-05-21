@@ -23,73 +23,17 @@
         
         
           <script type="text/javascript" src="./scripts/jQuery.js"></script>
-        <script type="text/javascript" src="./scripts/fileSaver.js"></script>
-        <script type="text/javascript" src="../../jsPDF-1.3.2/jspdf.js"></script>
+    
             <script type="text/javascript" src="./scripts/semantic-ui.js"></script>
         <script>
 
             
             $( "#imprimir" ).click(function() {
 
-	       text = 'Fiscal: ' +  localStorage.fiscal  +
-		'\nArea: ' + localStorage.area + '\n\nOs quesitos abaixos estao conformes? :'
-                + '\n\nLimpeza: ' +  localStorage.resposta1  +
-		'\nHidrantes: ' + localStorage.resposta2
-                + '\nAgua Acumulada: ' +  localStorage.resposta3  +
-		'\nPavimentacao: ' + localStorage.resposta4
-                + '\nTransito: ' +  localStorage.resposta5  +
-		'\nSinalizacao: ' + localStorage.resposta6
-                + '\nGeracao de Particulados: ' +  localStorage.resposta7  +
-		'\nEPI: ' + localStorage.resposta8 
-                  + '\nEstacionamento: ' +  localStorage.resposta9  +
-		'\nAcumulo/Fuga de Residuos: ' + localStorage.resposta10
-                  + '\nEstrutura: ' +  localStorage.resposta11  +
-		'\nIluminacao: ' + localStorage.resposta12
-                  + '\nCarga Perigosa: ' +  localStorage.resposta13  +
-		'\nDescarte de Residuo: ' + localStorage.resposta14
-                  + '\nGeracao de efluentes liquidos: ' +  localStorage.resposta15  +
-		'\nArmazenamento de Carga: ' + localStorage.resposta16
-                  + '\nCondicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
-		'\nProcedimento Operacional: ' + localStorage.resposta18 
-               + '\nOperador Portuario: ' +  localStorage.resposta19;
-            
-                var  doc = new jsPDF();
-               
-
-                    doc.text(text, 10, 10);
-
-                
-               
-              var pdf = doc.output();
-                
-               window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
-
-     console.log(fileSystem.name);
-     console.log(fileSystem.root.name);
-     console.log(fileSystem.root.fullPath);
-
-     fileSystem.root.getFile("Relatório do Checklist.pdf", {create: true}, function(entry) {
-        var fileEntry = entry;
-        console.log(entry);
-
-  entry.createWriter(function(writer) {
-     writer.onwrite = function(evt) {
-     console.log("write success");
-  };
-
-        console.log("writing to file");
-           writer.write( pdf );
-        }, function(error) {
-           console.log(error);
-        });
-
-     }, function(error){
-        console.log(error);
-     });
-           
-              
+	
 });
             
+
 
             
         </script>

@@ -193,6 +193,41 @@ module.exports = [
         "merges": [
             "window.FileSystem"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+        "id": "cordova-plugin-dialogs.notification",
+        "pluginId": "cordova-plugin-dialogs",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-dialogs/www/browser/notification.js",
+        "id": "cordova-plugin-dialogs.notification_browser",
+        "pluginId": "cordova-plugin-dialogs",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "file": "plugins/cordova-pdf-generator/www/pdf.js",
+        "id": "cordova-pdf-generator.pdf",
+        "pluginId": "cordova-pdf-generator",
+        "clobbers": [
+            "cordova.plugins.pdf",
+            "pugin.pdf",
+            "pdf"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-printer/www/printer.js",
+        "id": "cordova-plugin-printer.Printer",
+        "pluginId": "cordova-plugin-printer",
+        "clobbers": [
+            "plugin.printer",
+            "cordova.plugins.printer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -200,7 +235,10 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-inappbrowser": "3.0.0",
-    "cordova-plugin-file": "6.0.1"
+    "cordova-plugin-file": "6.0.1",
+    "cordova-plugin-dialogs": "2.0.1",
+    "cordova-pdf-generator": "2.0.4",
+    "cordova-plugin-printer": "0.7.3"
 }
 // BOTTOM OF METADATA
 });

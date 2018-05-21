@@ -1,0 +1,120 @@
+[33mcommit dfcbdc149a022f97ff4e7767f16fe72e3246a4f0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mAplicativoCDP/master[m[33m)[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Sun May 20 15:37:40 2018 -0300
+
+    Adicionado o plugin de arquivo
+
+[33mcommit 9bb2d400f93e13349e69c101957367848b5de5ac[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Fri May 18 11:24:11 2018 -0300
+
+    Teste de PDF Android v2.0
+
+[33mcommit 33f991d350ec3945f817a3567aab8f58ea7b8e81[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Fri May 18 11:10:02 2018 -0300
+
+    Mudança de design na pagina inicial
+
+[33mcommit 3409ed2d30a8898041d9d65f921db30467d1e40a[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Fri May 18 11:07:38 2018 -0300
+
+    Mudança na Logo
+
+[33mcommit 3769d9f968c8e1ea72d7d53125ac6ed0f7ba671a[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Fri May 18 11:04:48 2018 -0300
+
+    Teste de PDF para android
+
+[33mcommit 91857081b21db345b23a0ab9abaae26f9de2e9f1[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 22:21:17 2018 -0300
+
+    Conserto de Palavras de saída do PDF
+
+[33mcommit ffab44cbb4b877b3b2d2cabe15f5a1fe6039a7d0[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 22:18:48 2018 -0300
+
+    Ajuste da Impressão do PDF
+
+[33mcommit fde7d2f47cffa9395b330bcae82626fab219981f[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 21:36:58 2018 -0300
+
+    Design da Página final concluido
+
+[33mcommit 594b09b802f55a15b125457f7b09f505021e40f3[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 21:34:31 2018 -0300
+
+    Impressão em PDF concluida
+
+[33mcommit 223cf8e29dc96750f377203a8c040d206ac6c0f9[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 20:38:11 2018 -0300
+
+    Suporte ao teste no browser
+
+[33mcommit d54a7a626edc48a8f2f078bf9e811bfba2f60c76[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 20:27:26 2018 -0300
+
+    Teste de PDF
+
+[33mcommit a64d9847879642ba8e72caa6cddb3311704dccb5[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 20:09:48 2018 -0300
+
+    Impressão de PDF iniciado
+
+[33mcommit 3a276cd595223304abd97cc44f5b4f4234cff62c[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 19:47:48 2018 -0300
+
+    Adição de Campos de Fiscal e Área
+
+[33mcommit f4b1f045c585cde06ef3fe3f359b4144495ec092[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Thu May 17 19:36:51 2018 -0300
+
+    Adição do README.md
+
+[33mcommit f83cbb7422cd818f35793acb9ecbaf3f5f6c8b89[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Wed May 16 21:05:22 2018 -0300
+
+    Design dos Questionários v1.0
+
+[33mcommit 38850e596329915490f6c38daf034befdee001ff[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Wed May 16 20:08:11 2018 -0300
+
+    Inserimento de style e script
+
+[33mcommit 2ad90c759ce66669c0e2e4e157d0065158c9f763[m
+Merge: f07034b 2fb915a
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Wed May 16 19:49:32 2018 -0300
+
+    Conserto da base
+
+[33mcommit 2fb915a26bbe8bde722e53e28af57e823b54e905[m
+Author: Matheus Ryuki Medeiros Kaiya <dr_4_gao@hotmail.com>
+Date:   Wed May 16 10:37:40 2018 -0300
+
+    Create README.md
+
+[33mcommit a61971645795b05ebd40f49a90d64e0a215d2ce4[m
+Author: Matheus Ryuki Medeiros Kaiya <dr_4_gao@hotmail.com>
+Date:   Wed May 16 10:35:16 2018 -0300
+
+    Initial commit
+
+[33mcommit f07034bcf7f0b01efdb98399bb2945476a187c9b[m
+Author: Matheus <dr_4_gao@hotmail.com>
+Date:   Wed May 16 10:26:42 2018 -0300
+
+    Ambiente de Desenvolvimento Pronto
