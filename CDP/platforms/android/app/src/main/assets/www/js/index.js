@@ -44,3 +44,13 @@ var app = {
 };
 
 app.initialize();
+
+
+
+
+//Primeiro Clique
+$("#first").click(function(){
+      $("logo").html()="";
+        $("titulo").html()="";
+    $("first").html()="";
+});
