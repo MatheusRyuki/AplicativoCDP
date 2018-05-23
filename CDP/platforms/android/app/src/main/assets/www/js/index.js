@@ -100,7 +100,7 @@ $("#third").click(function(){
        localStorage.resposta19 = $('.resposta19:checked').val();
      $("#terceiro").hide();
     for (var i = 0; i < localStorage.length; i++){  
-        if(typeof xlocalStorage.getItem(localStorage.key(i)) == undefined){
+        if(typeof localStorage.getItem(localStorage.key(i)) == undefined){
                 navigator.notification.alert(
                         'Você errou um dos campos!',  // message
                         function(){},         // callback
@@ -154,7 +154,7 @@ $("#fifth").click(function(){
         
         cordova.plugins.printer.print(page, 'Relatório Checklist.pdf');
             
-    navigator.app.exitApp();
+   
     
     console.log('Received Event: ' + id);
     

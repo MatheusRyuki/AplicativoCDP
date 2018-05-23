@@ -150,11 +150,11 @@ $("#finally").click(function(){
         
         //Quinto Clique - Impressão
 $("#fifth").click(function(){
-    var page = $("#documento").val();
+    var page = $("#documento").html();
         
         cordova.plugins.printer.print(page, 'Relatório Checklist.pdf');
             
-    navigator.app.exitApp();
+   
     
     console.log('Received Event: ' + id);
     
