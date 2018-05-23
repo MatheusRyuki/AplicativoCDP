@@ -132,36 +132,30 @@ $("#finally").click(function(){
 $("#fifth").click(function(){
     
         var text = 'Fiscal: ' +  localStorage.fiscal  +
-		'\nArea: ' + localStorage.area + '\n\nOs quesitos abaixos estao conformes? :'
-                + '\n\nLimpeza: ' +  localStorage.resposta1  +
-		'\nHidrantes: ' + localStorage.resposta2
-                + '\nAgua Acumulada: ' +  localStorage.resposta3  +
-		'\nPavimentacao: ' + localStorage.resposta4
-                + '\nTransito: ' +  localStorage.resposta5  +
-		'\nSinalizacao: ' + localStorage.resposta6
-                + '\nGeracao de Particulados: ' +  localStorage.resposta7  +
-		'\nEPI: ' + localStorage.resposta8 
-                  + '\nEstacionamento: ' +  localStorage.resposta9  +
-		'\nAcumulo/Fuga de Residuos: ' + localStorage.resposta10
-                  + '\nEstrutura: ' +  localStorage.resposta11  +
-		'\nIluminacao: ' + localStorage.resposta12
-                  + '\nCarga Perigosa: ' +  localStorage.resposta13  +
-		'\nDescarte de Residuo: ' + localStorage.resposta14
-                  + '\nGeracao de efluentes liquidos: ' +  localStorage.resposta15  +
-		'\nArmazenamento de Carga: ' + localStorage.resposta16
-                  + '\nCondicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
-		'\nProcedimento Operacional: ' + localStorage.resposta18 
-               + '\nOperador Portuario: ' +  localStorage.resposta19;
+		'<br>Area: ' + localStorage.area + '<br><br>Os quesitos abaixos estao conformes? :'
+                + '<br><br>Limpeza: ' +  localStorage.resposta1  +
+		'<br>Hidrantes: ' + localStorage.resposta2
+                + '<br>Agua Acumulada: ' +  localStorage.resposta3  +
+		'<br>Pavimentacao: ' + localStorage.resposta4
+                + '<br>Transito: ' +  localStorage.resposta5  +
+		'<br>Sinalizacao: ' + localStorage.resposta6
+                + '<br>Geracao de Particulados: ' +  localStorage.resposta7  +
+		'<br>EPI: ' + localStorage.resposta8 
+                  + '<br>Estacionamento: ' +  localStorage.resposta9  +
+		'<br>Acumulo/Fuga de Residuos: ' + localStorage.resposta10
+                  + '<br>Estrutura: ' +  localStorage.resposta11  +
+		'<br>Iluminacao: ' + localStorage.resposta12
+                  + '<br>Carga Perigosa: ' +  localStorage.resposta13  +
+		'<br>Descarte de Residuo: ' + localStorage.resposta14
+                  + '<br>Geracao de efluentes liquidos: ' +  localStorage.resposta15  +
+		'<br>Armazenamento de Carga: ' + localStorage.resposta16
+                  + '<br>Condicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
+		'<br>Procedimento Operacional: ' + localStorage.resposta18 
+               + '<br>Operador Portuario: ' +  localStorage.resposta19;
     
 
-    var options = {
-        data: text,
-        type: 'Data',
-        title: 'Relatório Checklist';
-    }
-    
-       window.plugins.PrintPDF.print(options);
-   
+  
+   cordova.plugins.printer.print(text, 'Relatório Checklist.pdf');
     
     console.log('Received Event: ' + id);
     
