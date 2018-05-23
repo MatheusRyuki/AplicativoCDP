@@ -1,0 +1,57 @@
+{
+  "_from": "cordova-plugin-print-pdf",
+  "_id": "cordova-plugin-print-pdf@4.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-VxKxZaOO9rYq6BbVawwSm/D0fKo=",
+  "_location": "/cordova-plugin-print-pdf",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-print-pdf",
+    "name": "cordova-plugin-print-pdf",
+    "escapedName": "cordova-plugin-print-pdf",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-print-pdf/-/cordova-plugin-print-pdf-4.0.2.tgz",
+  "_shasum": "5712b165a38ef6b62ae816d56b0c129bf0f47caa",
+  "_spec": "cordova-plugin-print-pdf",
+  "_where": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP",
+  "author": {
+    "name": "Sarah Goldman"
+  },
+  "bugs": {
+    "url": "https://github.com/sarahgoldman/cordova-print-pdf-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-print-pdf",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Print PDF Plugin",
+  "homepage": "https://github.com/sarahgoldman/cordova-print-pdf-plugin#readme",
+  "keywords": [
+    "cordova",
+    "print",
+    "cordova-ios",
+    "cordova-android",
+    "pdf"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-print-pdf",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahgoldman/cordova-print-pdf-plugin.git"
+  },
+  "version": "4.0.2"
+}

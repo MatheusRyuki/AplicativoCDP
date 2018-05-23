@@ -118,7 +118,20 @@ $("#third").click(function(){
         //Quarto Clique - Geração
         
 $("#finally").click(function(){
-    var text = 'Fiscal: ' +  localStorage.fiscal  +
+
+    
+        
+                $("#quarto").remove();
+                $("#fifth").show();
+                
+ 
+    
+});
+        
+        //Quinto Clique - Impressão
+$("#fifth").click(function(){
+    
+        var text = 'Fiscal: ' +  localStorage.fiscal  +
 		'\nArea: ' + localStorage.area + '\n\nOs quesitos abaixos estao conformes? :'
                 + '\n\nLimpeza: ' +  localStorage.resposta1  +
 		'\nHidrantes: ' + localStorage.resposta2
@@ -140,20 +153,14 @@ $("#finally").click(function(){
 		'\nProcedimento Operacional: ' + localStorage.resposta18 
                + '\nOperador Portuario: ' +  localStorage.resposta19;
     
-        
-                $("#quarto").remove();
-                $("#fifth").show();
-                
- 
+
+    var options = {
+        data: text,
+        type: 'Data',
+        title: 'Relatório Checklist';
+    }
     
-});
-        
-        //Quinto Clique - Impressão
-$("#fifth").click(function(){
-    var page = text;
-        
-        cordova.plugins.printer.print(page, 'Relatório Checklist.pdf');
-            
+       window.plugins.PrintPDF.print(options);
    
     
     console.log('Received Event: ' + id);

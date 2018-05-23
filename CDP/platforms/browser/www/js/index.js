@@ -100,7 +100,7 @@ $("#third").click(function(){
        localStorage.resposta19 = $('.resposta19:checked').val();
      $("#terceiro").hide();
     for (var i = 0; i < localStorage.length; i++){  
-        if(typeof xlocalStorage.getItem(localStorage.key(i)) == undefined){
+        if(typeof localStorage.getItem(localStorage.key(i)) == undefined){
                 navigator.notification.alert(
                         'Você errou um dos campos!',  // message
                         function(){},         // callback
@@ -140,9 +140,9 @@ $("#finally").click(function(){
 		'\nProcedimento Operacional: ' + localStorage.resposta18 
                + '\nOperador Portuario: ' +  localStorage.resposta19;
     
-            	  $("#documento").text(text);
+        
                 $("#quarto").remove();
-     $("#fifth").show();
+                $("#fifth").show();
                 
  
     
@@ -150,17 +150,17 @@ $("#finally").click(function(){
         
         //Quinto Clique - Impressão
 $("#fifth").click(function(){
-    var page = $("#documento").val();
+    var page = text;
         
         cordova.plugins.printer.print(page, 'Relatório Checklist.pdf');
             
-    navigator.app.exitApp();
+   
     
     console.log('Received Event: ' + id);
     
 
         });
-};
+}};
 
 app.initialize();
 
