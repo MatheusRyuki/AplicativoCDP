@@ -140,9 +140,9 @@ $("#finally").click(function(){
 		'\nProcedimento Operacional: ' + localStorage.resposta18 
                + '\nOperador Portuario: ' +  localStorage.resposta19;
     
-            	  $("#documento").text(text);
+        
                 $("#quarto").remove();
-     $("#fifth").show();
+                $("#fifth").show();
                 
  
     
@@ -150,7 +150,7 @@ $("#finally").click(function(){
         
         //Quinto Clique - Impressão
 $("#fifth").click(function(){
-    var page = $("#documento").html();
+    var page = text;
         
         cordova.plugins.printer.print(page, 'Relatório Checklist.pdf');
             
