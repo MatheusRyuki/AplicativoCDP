@@ -113,6 +113,8 @@ $("#third").click(function(){
     }
 });
         
+        //Quarto Clique - Impressão
+        
         
         console.log('Received Event: ' + id);
     }

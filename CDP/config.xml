@@ -27,4 +27,5 @@
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <engine name="android" spec="^7.0.0" />
     <engine name="browser" spec="^5.0.3" />
+    <plugin name="cordova-plugin-printer" spec="^0.7.3" />
 </widget>
