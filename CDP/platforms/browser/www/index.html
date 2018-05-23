@@ -37,16 +37,31 @@
     </head>
     <body>
         <div class="ui container">
-         <div class="ui center aligned segment">
-
    <!--Primeira Seção-->
-            <img id="logo" class="ui medium circular image" src="img/logo.png">
-            <div id="titulo" class="ui header">Checklist  CDP</div>
-            <button id="first" class="ui grey button">Comece aqui!</button>
+     <img id="logo" class="ui medium circular image" src="img/logo.png">
+     <div id="titulo" class="ui center aligned header">Checklist  CDP</div>
+      <button id="first" class="fluid ui grey button">Comece aqui!</button>
+
             <!--Segunda Seção-->
-           
-           </div>                      
-        </div>
+    <div class="ui floating message" id="msg1" style="margin-top:10px;">
+       Antes de Começamos, diga Seu Nome e Sua Área:
+    </div> 
+<div class="ui form">
+  <div class="two fields">  
+    <div id="field1" class="field">
+        <label>Fiscal:</label><input type="text" placeholder="Fiscal" id="Fiscal" name="Fiscal">
+      </div>
+         <div id="field2" class="field">
+            <label>Área:</label><input type="text" placeholder="Área" id="Area" name="Area"> </div>
+      </div>
+    </div>
+            
+            
+            
+            
+            
+</div>
+                              
          <script type="text/javascript" src="js/jQuery.js"></script>
          <script type="text/javascript" src="js/semantic-ui.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
