@@ -100,7 +100,7 @@ $("#third").click(function(){
        localStorage.resposta19 = $('.resposta19:checked').val();
      $("#terceiro").hide();
     for (var i = 0; i < localStorage.length; i++){  
-        if(typeof localStorage.getItem(localStorage.key(i)) == undefined){
+        if(localStorage.getItem(i) == undefined){
                 navigator.notification.alert(
                         'Você errou um dos campos!',  // message
                         function(){},         // callback
