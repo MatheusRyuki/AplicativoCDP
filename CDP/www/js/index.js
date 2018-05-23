@@ -32,6 +32,7 @@ var app = {
           $("#msg1").hide();
             $("#second").hide();
         $("#terceiro").hide();
+             $("#quarto").hide();
         this.receivedEvent('deviceready');
     },
 
@@ -96,14 +97,20 @@ $("#third").click(function(){
        localStorage.resposta18 = $('.resposta18:checked').val(),
        localStorage.resposta19 = $('.resposta19:checked').val();
      $("terceiro").hide();
-for (var i = 0; i < localStorage.length; i++){
-   if(!localStorage[i]){
-       $("terceiro").show();
-   }
-}
-    
-    
-    
+    for (var i = 0; i < localStorage.length; i++){
+        if(!localStorage[i]){
+                navigator.notification.alert(
+                        'Você errou um dos campos!',  // message
+                        function(){},         // callback
+                        'Erro',            // title
+                        'OK'                  // buttonName
+                );
+    $("terceiro").show();
+        } else {
+            $("terceiro").remove();
+             $("#quarto").show();
+        }
+    }
 });
         
         
