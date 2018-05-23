@@ -4,12 +4,20 @@
         "source": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\src\\main\\res\\drawable-port-mdpi\\screen.png"
     },
     {
+        "merged": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_printer_activity.xml.flat",
+        "source": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\src\\main\\res\\layout\\select_printer_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
         "source": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
     },
     {
         "merged": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
         "source": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\src\\main\\res\\drawable-port-xhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_printer_list_item.xml.flat",
+        "source": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\src\\main\\res\\layout\\printer_list_item.xml"
     },
     {
         "merged": "C:\\Users\\dr_4_\\Downloads\\download\\MatheusRyuki-AplicativoCDP\\CDP\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxxhdpi_screen.png.flat",
