@@ -34,6 +34,7 @@ var app = {
         $("#terceiro").hide();
              $("#quarto").hide();
         $("#documento").hide();
+         $("#fifth").hide();
         this.receivedEvent('deviceready');
     },
 
@@ -99,7 +100,7 @@ $("#third").click(function(){
        localStorage.resposta19 = $('.resposta19:checked').val();
      $("#terceiro").hide();
     for (var i = 0; i < localStorage.length; i++){  
-        if(typeof xlocalStorage.getItem(localStorage.key(i)) == undefined){
+        if(typeof localStorage.getItem(localStorage.key(i)) == undefined){
                 navigator.notification.alert(
                         'Você errou um dos campos!',  // message
                         function(){},         // callback
@@ -114,7 +115,7 @@ $("#third").click(function(){
     }
 });
         
-        //Quarto Clique - Impressão
+        //Quarto Clique - Geração
         
 $("#finally").click(function(){
     var text = 'Fiscal: ' +  localStorage.fiscal  +
@@ -138,19 +139,28 @@ $("#finally").click(function(){
                   + '\nCondicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
 		'\nProcedimento Operacional: ' + localStorage.resposta18 
                + '\nOperador Portuario: ' +  localStorage.resposta19;
-    $("#documento").show();
+    
             	  $("#documento").text(text);
                 $("#quarto").remove();
-    
-    var page = $("#documento").val();
+     $("#fifth").show();
+                
  
-cordova.plugins.printer.print(page, 'Relatório Checklist.pdf');
-     navigator.app.exitApp();
+    
 });
         
-        console.log('Received Event: ' + id);
-    }
-};
+        //Quinto Clique - Impressão
+$("#fifth").click(function(){
+    var page = $("#documento").val();
+        
+        cordova.plugins.printer.print(page, 'Relatório Checklist.pdf');
+            
+    navigator.app.exitApp();
+    
+    console.log('Received Event: ' + id);
+    
+
+        });
+}};
 
 app.initialize();
 
