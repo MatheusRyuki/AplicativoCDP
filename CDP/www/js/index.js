@@ -96,18 +96,18 @@ $("#third").click(function(){
        localStorage.resposta17 = $('.resposta17:checked').val(),
        localStorage.resposta18 = $('.resposta18:checked').val(),
        localStorage.resposta19 = $('.resposta19:checked').val();
-     $("terceiro").hide();
+     $("#terceiro").hide();
     for (var i = 0; i < localStorage.length; i++){
-        if(!localStorage[i]){
+        if(localStorage.getItem(localStorage.key(i)) === undefined){
                 navigator.notification.alert(
                         'Você errou um dos campos!',  // message
                         function(){},         // callback
                         'Erro',            // title
                         'OK'                  // buttonName
                 );
-    $("terceiro").show();
+        $("#terceiro").show();
         } else {
-            $("terceiro").remove();
+            $("#terceiro").remove();
              $("#quarto").show();
         }
     }
