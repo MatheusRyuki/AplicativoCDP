@@ -100,7 +100,7 @@ $("#third").click(function(){
        localStorage.resposta19 = $('.resposta19:checked').val();
      $("#terceiro").hide();
     for (var i = 0; i < localStorage.length; i++){  
-        if(typeof localStorage.getItem(localStorage.key(i)) == undefined){
+        if(typeof localStorage.getItem(i) == undefined){
                 navigator.notification.alert(
                         'Você errou um dos campos!',  // message
                         function(){},         // callback
@@ -133,22 +133,22 @@ $("#fifth").click(function(){
     
         var text = 'Fiscal: ' +  localStorage.fiscal  +
 		'<br>Area: ' + localStorage.area + '<br><br>Os quesitos abaixos estao conformes? :'
-                + '\<br>Limpeza: ' +  localStorage.resposta1  +
-		'\nHidrantes: ' + localStorage.resposta2
+                + '<br><br>Limpeza: ' +  localStorage.resposta1  +
+		'<br>Hidrantes: ' + localStorage.resposta2
                 + '<br>Agua Acumulada: ' +  localStorage.resposta3  +
-		'\nPavimentacao: ' + localStorage.resposta4
+		'<br>Pavimentacao: ' + localStorage.resposta4
                 + '<br>Transito: ' +  localStorage.resposta5  +
-		'\nSinalizacao: ' + localStorage.resposta6
+		'<br>Sinalizacao: ' + localStorage.resposta6
                 + '<br>Geracao de Particulados: ' +  localStorage.resposta7  +
-		'\nEPI: ' + localStorage.resposta8 
+		'<br>EPI: ' + localStorage.resposta8 
                   + '<br>Estacionamento: ' +  localStorage.resposta9  +
 		'<br>Acumulo/Fuga de Residuos: ' + localStorage.resposta10
                   + '<br>Estrutura: ' +  localStorage.resposta11  +
-		'\nIluminacao: ' + localStorage.resposta12
+		'<br>Iluminacao: ' + localStorage.resposta12
                   + '<br>Carga Perigosa: ' +  localStorage.resposta13  +
-		'\nDescarte de Residuo: ' + localStorage.resposta14
+		'<br>Descarte de Residuo: ' + localStorage.resposta14
                   + '<br>Geracao de efluentes liquidos: ' +  localStorage.resposta15  +
-		'\nArmazenamento de Carga: ' + localStorage.resposta16
+		'<br>Armazenamento de Carga: ' + localStorage.resposta16
                   + '<br>Condicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
 		'<br>Procedimento Operacional: ' + localStorage.resposta18 
                + '<br>Operador Portuario: ' +  localStorage.resposta19;
