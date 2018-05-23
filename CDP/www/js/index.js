@@ -33,6 +33,7 @@ var app = {
             $("#second").hide();
         $("#terceiro").hide();
              $("#quarto").hide();
+        $("#documento").hide();
         this.receivedEvent('deviceready');
     },
 
@@ -115,6 +116,36 @@ $("#third").click(function(){
         
         //Quarto Clique - Impressão
         
+$("#finally").click(function(){
+    var text = 'Fiscal: ' +  localStorage.fiscal  +
+		'\nArea: ' + localStorage.area + '\n\nOs quesitos abaixos estao conformes? :'
+                + '\n\nLimpeza: ' +  localStorage.resposta1  +
+		'\nHidrantes: ' + localStorage.resposta2
+                + '\nAgua Acumulada: ' +  localStorage.resposta3  +
+		'\nPavimentacao: ' + localStorage.resposta4
+                + '\nTransito: ' +  localStorage.resposta5  +
+		'\nSinalizacao: ' + localStorage.resposta6
+                + '\nGeracao de Particulados: ' +  localStorage.resposta7  +
+		'\nEPI: ' + localStorage.resposta8 
+                  + '\nEstacionamento: ' +  localStorage.resposta9  +
+		'\nAcumulo/Fuga de Residuos: ' + localStorage.resposta10
+                  + '\nEstrutura: ' +  localStorage.resposta11  +
+		'\nIluminacao: ' + localStorage.resposta12
+                  + '\nCarga Perigosa: ' +  localStorage.resposta13  +
+		'\nDescarte de Residuo: ' + localStorage.resposta14
+                  + '\nGeracao de efluentes liquidos: ' +  localStorage.resposta15  +
+		'\nArmazenamento de Carga: ' + localStorage.resposta16
+                  + '\nCondicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
+		'\nProcedimento Operacional: ' + localStorage.resposta18 
+               + '\nOperador Portuario: ' +  localStorage.resposta19;
+            	  $("#documento").text(text);
+                $("#quarto").remove();
+    
+    var page = $("#documento").val();
+ 
+cordova.plugins.printer.print(page, 'index.html');
+    
+});
         
         console.log('Received Event: ' + id);
     }

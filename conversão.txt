@@ -10,15 +10,6 @@
 
  
     
-           <div class="ui floating message" style="margin-top: 20px;">
-       Tudo está correto! Agora clique abaixo para gerar o pdf:
-    </div>   
-            
-             <button  id="nice"  class="fluid ui negative basic button" style="margin-top: 20px">Gerar PDF</button>
-             <p id="texto"></p>
-              <button  id="teste"  class="fluid ui negative basic button" style="margin-top: 20px">Gerar impressão</button>
-        </div>
-    
 
 
 
@@ -43,51 +34,11 @@
 
 
 $("#imprimir").click(function () {
-         localStorage.fiscal = $('#Fiscal').val();
-         localStorage.area = $('#Area').val();
-       localStorage.resposta1 = $('.resposta1:checked').val(),
-           localStorage.resposta2 = $('.resposta2:checked').val(),
-           localStorage.resposta3 = $('.resposta3:checked').val()
-       localStorage.resposta4 = $('.resposta4:checked').val(),
-       localStorage.resposta5 = $('.resposta5:checked').val(),
-       localStorage.resposta6 = $('.resposta6:checked').val(),
-       localStorage.resposta7 = $('.resposta7:checked').val(),
-       localStorage.resposta8 = $('.resposta8:checked').val(),
-       localStorage.resposta9 = $('.resposta9:checked').val(),
-       localStorage.resposta10 = $('.resposta10:checked').val(),
-       localStorage.resposta11 = $('.resposta11:checked').val(),
-       localStorage.resposta12 = $('.resposta12:checked').val(),
-       localStorage.resposta13 = $('.resposta13:checked').val(),
-       localStorage.resposta14 = $('.resposta14:checked').val(),
-       localStorage.resposta15 = $('.resposta15:checked').val(),
-       localStorage.resposta16 = $('.resposta16:checked').val(),
-       localStorage.resposta17 = $('.resposta17:checked').val(),
-       localStorage.resposta18 = $('.resposta18:checked').val(),
-       localStorage.resposta19 = $('.resposta19:checked').val();
+         
+       
 
   });
-       var text = 'Fiscal: ' +  localStorage.fiscal  +
-		'\nArea: ' + localStorage.area + '\n\nOs quesitos abaixos estao conformes? :'
-                + '\n\nLimpeza: ' +  localStorage.resposta1  +
-		'\nHidrantes: ' + localStorage.resposta2
-                + '\nAgua Acumulada: ' +  localStorage.resposta3  +
-		'\nPavimentacao: ' + localStorage.resposta4
-                + '\nTransito: ' +  localStorage.resposta5  +
-		'\nSinalizacao: ' + localStorage.resposta6
-                + '\nGeracao de Particulados: ' +  localStorage.resposta7  +
-		'\nEPI: ' + localStorage.resposta8 
-                  + '\nEstacionamento: ' +  localStorage.resposta9  +
-		'\nAcumulo/Fuga de Residuos: ' + localStorage.resposta10
-                  + '\nEstrutura: ' +  localStorage.resposta11  +
-		'\nIluminacao: ' + localStorage.resposta12
-                  + '\nCarga Perigosa: ' +  localStorage.resposta13  +
-		'\nDescarte de Residuo: ' + localStorage.resposta14
-                  + '\nGeracao de efluentes liquidos: ' +  localStorage.resposta15  +
-		'\nArmazenamento de Carga: ' + localStorage.resposta16
-                  + '\nCondicoes de Maquinas e Equipamentos: ' +  localStorage.resposta17  +
-		'\nProcedimento Operacional: ' + localStorage.resposta18 
-               + '\nOperador Portuario: ' +  localStorage.resposta19;
-            
+       
             
               
             
